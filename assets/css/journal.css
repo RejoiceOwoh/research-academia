@@ -1,0 +1,111 @@
+/* =========================================================
+   Research Academia — shared journal page enhancements
+   Applies to INTERJ / JORSTED volume pages and IJIRE.
+   Loaded AFTER main.css so these rules win.
+   ========================================================= */
+
+/* ---------- Breadcrumb hero ---------- */
+.breadcrumbs {
+  background: linear-gradient(135deg,
+      rgba(var(--color-primary-rgb), .10),
+      rgba(var(--color-primary-rgb), .02) 60%,
+      rgba(var(--color-secondary-rgb), .04));
+  border-bottom: 1px solid rgba(var(--color-primary-rgb), .18);
+  padding: 34px 0;
+  margin-top: 76px;
+}
+.breadcrumbs h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-default);
+  margin: 0;
+  line-height: 1.25;
+}
+.breadcrumbs ol {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin: 6px 0 0; padding: 0; list-style: none; font-size: 14px;
+}
+.breadcrumbs ol li { display: inline-flex; align-items: center; color: var(--color-secondary); }
+.breadcrumbs ol li + li::before {
+  content: "\F285"; font-family: "bootstrap-icons"; font-size: 12px;
+  margin: 0 8px; color: var(--color-secondary-light);
+}
+.breadcrumbs ol li a { color: var(--color-primary-dark); font-weight: 600; }
+.breadcrumbs ol li a:hover { color: var(--color-primary); }
+@media (max-width: 767px) {
+  .breadcrumbs { padding: 26px 0; }
+  .breadcrumbs h2 { font-size: 23px; }
+  .breadcrumbs .d-flex { flex-direction: column; align-items: flex-start !important; gap: 8px; }
+}
+
+/* ---------- Article cards ---------- */
+#blog.blog { padding-top: 44px; }
+.blog .posts-list { counter-reset: article; }
+
+/* stretch columns so every card is equal height */
+.blog .posts-list > [class*="col-"] { display: flex; }
+
+.blog .posts-list article {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(var(--color-secondary-rgb), .14);
+  border-radius: 16px;
+  padding: 26px 24px 22px;
+  box-shadow: 0 6px 22px rgba(var(--color-secondary-rgb), .07);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.blog .posts-list article::after {
+  content: ""; position: absolute; left: 0; top: 22px; bottom: 22px;
+  width: 4px; border-radius: 4px; background: var(--color-primary);
+  opacity: 0; transition: opacity .28s ease;
+}
+.blog .posts-list article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(var(--color-primary-rgb), .18);
+  border-color: rgba(var(--color-primary-rgb), .55);
+}
+.blog .posts-list article:hover::after { opacity: 1; }
+
+/* auto "Article N" eyebrow */
+.blog .posts-list article .title::before {
+  counter-increment: article;
+  content: "Article " counter(article);
+  display: block;
+  font-size: 11.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+}
+.blog .posts-list article .title {
+  font-size: 17px; font-weight: 600; line-height: 1.45;
+  color: var(--color-default); margin: 0 0 14px;
+}
+.blog .posts-list article .title a { color: var(--color-default); }
+.blog .posts-list article .title a:hover { color: var(--color-primary); }
+
+/* author meta */
+.blog .posts-list article .meta-top { margin-bottom: 16px; }
+.blog .posts-list article .meta-top ul {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none;
+}
+.blog .posts-list article .meta-top ul li {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13.5px; color: var(--color-secondary);
+  background: rgba(var(--color-secondary-rgb), .06);
+  padding: 5px 12px; border-radius: 30px;
+}
+.blog .posts-list article .meta-top ul li i { color: var(--color-primary); font-size: 14px; }
+
+/* read-more button */
+.blog .posts-list article .read-more a {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--color-primary); color: #fff;
+  font-size: 14px; font-weight: 600; padding: 9px 20px; border-radius: 30px;
+  text-decoration: none; transition: background .25s, transform .25s, gap .25s;
+}
+.blog .posts-list article .read-more a::after {
+  content: "\F138"; font-family: "bootstrap-icons"; font-size: 14px;
+}
+.blog .posts-list article .read-more a:hover {
+  background: var(--color-primary-dark); transform: translateX(2px); gap: 10px;
+}
