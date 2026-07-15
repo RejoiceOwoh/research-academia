@@ -16,25 +16,49 @@
   <meta property="og:title" content="Research Academia — IJIRE, INTERJ &amp; JORSTED Journals | ESUT Enugu | Prof. T.M. Owoh">
   <meta property="og:description" content="Peer-reviewed academic journals from the Faculty of Education, Enugu State University of Science and Technology (ESUT). Home of IJIRE, INTERJ and JORSTED. Editor-in-Chief: Prof. Titus Maduabuchi Owoh.">
   <meta property="og:url" content="https://researchacademia.netlify.app/">
+  <meta property="og:locale" content="en_NG">
+  <meta property="og:image" content="https://researchacademia.netlify.app/assets/img/prof-owoh.jpg">
+  <meta property="og:image:alt" content="Prof. Titus Maduabuchi Owoh (Prof. T.M. Owoh), Dean, Faculty of Education, ESUT and Editor-in-Chief">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Research Academia — IJIRE, INTERJ &amp; JORSTED Journals | ESUT | Prof. T.M. Owoh">
+  <meta name="twitter:description" content="Peer-reviewed academic journals from the Faculty of Education, ESUT. Home of IJIRE, INTERJ and JORSTED. Editor-in-Chief: Prof. Titus Maduabuchi Owoh.">
+  <meta name="twitter:image" content="https://researchacademia.netlify.app/assets/img/prof-owoh.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Research Academia",
     "url": "https://researchacademia.netlify.app/",
+    "logo": "https://researchacademia.netlify.app/assets/img/prof-owoh.jpg",
     "description": "Publisher of peer-reviewed academic journals (IJIRE, INTERJ, JORSTED) from the Faculty of Education, Enugu State University of Science and Technology (ESUT), Enugu, Nigeria.",
     "founder": {
       "@type": "Person",
       "name": "Professor Titus Maduabuchi Owoh",
-      "alternateName": "Prof. T.M. Owoh",
-      "jobTitle": "Editor-in-Chief"
+      "alternateName": ["Prof. T.M. Owoh", "Owoh Titus"],
+      "image": "https://researchacademia.netlify.app/assets/img/prof-owoh.jpg",
+      "jobTitle": ["Dean, Faculty of Education, ESUT", "Editor-in-Chief"]
     },
+    "email": "owohtitus@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Enugu",
       "addressRegion": "Enugu State",
       "addressCountry": "Nigeria"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Professor Titus Maduabuchi Owoh",
+    "alternateName": ["Prof. T.M. Owoh", "Titus Owoh", "Owoh Titus"],
+    "image": "https://researchacademia.netlify.app/assets/img/prof-owoh.jpg",
+    "jobTitle": ["Dean, Faculty of Education", "Editor-in-Chief"],
+    "worksFor": { "@type": "CollegeOrUniversity", "name": "Enugu State University of Science and Technology (ESUT)" },
+    "affiliation": { "@type": "EducationalOrganization", "name": "Faculty of Education, Enugu State University of Science and Technology (ESUT)" },
+    "knowsAbout": ["Technical and Vocational Education (TVE)", "Educational Research", "Artificial Intelligence in Education", "Experiential Learning"],
+    "url": "https://researchacademia.netlify.app/"
   }
   </script>
 
@@ -116,18 +140,23 @@
 
   <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
+      <span class="hero-eyebrow" data-aos="fade-down">Faculty of Education &bull; Enugu State University of Science and Technology (ESUT)</span>
       <h2>Welcome to <span>Research</span> Academia</h2>
-      <p>Read &nbsp;|&nbsp; Review &nbsp;|&nbsp; Publish &nbsp;|&nbsp; Earn</p>
-      <p class="hero-tagline">Home of peer-reviewed academic journals &mdash; IJIRE, INTERJ &amp; JORSTED &mdash; from the Faculty of Education, Enugu State University of Science and Technology (ESUT).</p>
-      <div class="d-flex">
+      <p class="hero-motto">Read &nbsp;&bull;&nbsp; Review &nbsp;&bull;&nbsp; Publish &nbsp;&bull;&nbsp; Earn</p>
+      <p class="hero-tagline">Home of peer-reviewed academic journals &mdash; <strong>IJIRE</strong>, <strong>INTERJ</strong> &amp; <strong>JORSTED</strong> &mdash; edited by Editor-in-Chief <strong>Prof. T.M. Owoh</strong>, Dean, Faculty of Education, ESUT.</p>
+      <div class="hero-cta-row">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="mailto:owohtitus@gmail.com?subject=Manuscript%20Submission%20%E2%80%94%20Research%20Academia%20Journals&amp;body=Dear%20Editorial%20Desk%2C%0A%0AI%20would%20like%20to%20submit%20my%20manuscript%20for%20consideration%20in%20one%20of%20your%20journals%20(IJIRE%20%2F%20INTERJ%20%2F%20JORSTED).%0A%0AProposed%20Title%3A%20%0AAuthor(s)%3A%20%0AAffiliation%3A%20%0AField%2FSubject%20Area%3A%20%0A%0AThank%20you." class="btn-hero-secondary">
+          <i class="bi bi-send-fill"></i> Publish With Us
+        </a>
       </div>
 
       <!-- Journal quick-navigation -->
       <div class="hero-journals" data-aos="fade-up" data-aos-delay="200">
         <span class="hero-journals-label">Browse our Journal Publications</span>
         <div class="hero-journals-links">
-          <a href="IJIRE-vol-1.html" class="hero-journal-btn">
+          <a href="IJIRE-vol-1.html" class="hero-journal-btn featured">
+            <span class="hj-flag">Latest &bull; Faculty Journal</span>
             <i class="bi bi-journal-bookmark-fill"></i>
             <span class="hj-name">IJIRE</span>
             <span class="hj-sub">Integrated Research in Education &middot; Vol 1 (2025)</span>
@@ -149,36 +178,84 @@
   </section>
 
   <style>
+    /* ---------- Hero overhaul ---------- */
+    #hero-fullscreen .container { text-align: center; }
+    #hero-fullscreen .hero-eyebrow {
+      display: inline-block; background: rgba(var(--color-primary-rgb), .12);
+      color: var(--color-primary-dark); font-weight: 600; letter-spacing: .3px;
+      font-size: 13px; padding: 7px 18px; border-radius: 30px; margin-bottom: 18px;
+    }
+    #hero-fullscreen h2 { text-align: center; font-weight: 600; }
+    #hero-fullscreen .hero-motto {
+      text-transform: uppercase; letter-spacing: 3px; font-weight: 600;
+      color: var(--color-primary-dark); font-size: 15px; margin-bottom: 14px;
+    }
     #hero-fullscreen .hero-tagline {
-      max-width: 720px; text-align: center; font-size: 16px;
-      opacity: .9; margin-top: -6px; margin-bottom: 18px;
+      max-width: 720px; text-align: center; font-size: 17px; line-height: 1.6;
+      color: rgba(var(--color-secondary-rgb), .95); margin: 0 auto 26px;
+    }
+    #hero-fullscreen .hero-cta-row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
+    }
+    #hero-fullscreen .btn-hero-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 16px; font-weight: 600; padding: 10px 26px; border-radius: 4px;
+      color: var(--color-primary-dark); background: transparent;
+      border: 2px solid var(--color-primary); transition: .35s;
+    }
+    #hero-fullscreen .btn-hero-secondary:hover {
+      background: var(--color-primary); color: #fff;
     }
     .hero-journals {
-      margin-top: 42px; width: 100%; max-width: 940px; text-align: center;
+      margin-top: 48px; width: 100%; max-width: 980px; text-align: center;
     }
     .hero-journals-label {
       display: block; text-transform: uppercase; letter-spacing: 2px;
-      font-size: 12.5px; font-weight: 600; opacity: .75; margin-bottom: 16px;
+      font-size: 12.5px; font-weight: 700; color: var(--color-secondary-light);
+      margin-bottom: 18px;
     }
     .hero-journals-links {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;
     }
+    /* High-contrast solid cards for the light hero background */
     .hero-journal-btn {
+      position: relative;
       display: flex; flex-direction: column; align-items: center; text-align: center;
-      background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.25);
-      backdrop-filter: blur(6px);
-      border-radius: 14px; padding: 20px 24px; min-width: 210px; flex: 1 1 210px;
-      max-width: 280px; text-decoration: none; color: #fff;
-      transition: transform .25s, background .25s, border-color .25s;
+      background: #fff; border: 1px solid rgba(var(--color-secondary-rgb), .16);
+      box-shadow: 0 10px 30px rgba(var(--color-secondary-rgb), .12);
+      border-radius: 16px; padding: 26px 24px 22px; min-width: 220px; flex: 1 1 220px;
+      max-width: 290px; text-decoration: none; color: var(--color-secondary-dark);
+      transition: transform .28s, box-shadow .28s, border-color .28s;
     }
     .hero-journal-btn:hover {
-      transform: translateY(-5px); color: #fff;
-      background: var(--color-primary); border-color: var(--color-primary);
+      transform: translateY(-6px); color: var(--color-secondary-dark);
+      box-shadow: 0 18px 44px rgba(var(--color-primary-rgb), .28);
+      border-color: var(--color-primary);
     }
-    .hero-journal-btn i { font-size: 30px; margin-bottom: 10px; color: var(--color-primary-light); }
-    .hero-journal-btn:hover i { color: #fff; }
-    .hero-journal-btn .hj-name { font-size: 20px; font-weight: 700; letter-spacing: 1px; }
-    .hero-journal-btn .hj-sub { font-size: 12.5px; opacity: .85; margin-top: 4px; }
+    .hero-journal-btn.featured {
+      border-color: var(--color-primary);
+      box-shadow: 0 14px 38px rgba(var(--color-primary-rgb), .22);
+    }
+    .hero-journal-btn .hj-flag {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--color-primary); color: #fff; font-size: 11px; font-weight: 700;
+      letter-spacing: .4px; padding: 4px 12px; border-radius: 20px; white-space: nowrap;
+    }
+    .hero-journal-btn i {
+      font-size: 34px; margin-bottom: 12px; color: var(--color-primary);
+    }
+    .hero-journal-btn .hj-name {
+      font-size: 22px; font-weight: 800; letter-spacing: 1px; color: var(--color-default);
+    }
+    .hero-journal-btn .hj-sub {
+      font-size: 12.5px; color: var(--color-secondary); margin-top: 5px; line-height: 1.45;
+    }
+    @media (max-width: 640px) {
+      #hero-fullscreen h2 { font-size: 32px; }
+      #hero-fullscreen .hero-eyebrow { font-size: 11.5px; }
+      #hero-fullscreen .hero-tagline { font-size: 15.5px; }
+      .hero-journal-btn { flex: 1 1 100%; max-width: 320px; }
+    }
   </style>
 
   <main id="main">
@@ -315,7 +392,85 @@
       </div>
     </section><!-- End About Section -->
 
-   
+    <!-- ======= Editor-in-Chief / Leadership Section ======= -->
+    <section id="editor-in-chief" class="eic-section">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center g-4 g-lg-5">
+
+          <div class="col-lg-5 text-center">
+            <div class="eic-photo-wrap" data-aos="zoom-in">
+              <img src="assets/img/prof-owoh.jpg" width="576" height="720"
+                   alt="Professor Titus Maduabuchi Owoh (Prof. T.M. Owoh), Dean of the Faculty of Education, ESUT, and Editor-in-Chief of IJIRE"
+                   class="img-fluid eic-photo" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <span class="eic-eyebrow">Meet Our Editor-in-Chief</span>
+            <h2 class="eic-name">Prof. Titus Maduabuchi Owoh</h2>
+            <p class="eic-role">Dean, Faculty of Education, Enugu State University of Science and Technology (ESUT)
+              &nbsp;&bull;&nbsp; Editor-in-Chief, Research Academia Journals</p>
+
+            <p class="eic-bio">
+              <strong>Prof. T.M. Owoh</strong> leads Research Academia's editorial vision. As
+              <strong>Dean of the Faculty of Education, ESUT (August 2024 &ndash; August 2026)</strong>,
+              he champions the <strong>International Journal of Integrated Research in Education (IJIRE)</strong>
+              &mdash; a Faculty-wide, peer-reviewed journal. Earlier, as
+              <strong>Head of the Department of Technical and Vocational Education (TVE), ESUT</strong>,
+              he founded and hosted the departmental journals <strong>INTERJ</strong> and
+              <strong>JORSTED</strong>, building a research culture that now spans the entire Faculty.
+            </p>
+
+            <div class="eic-highlights">
+              <div class="eic-hl"><i class="bi bi-mortarboard-fill"></i> Dean, Faculty of Education, ESUT</div>
+              <div class="eic-hl"><i class="bi bi-journal-bookmark-fill"></i> Editor-in-Chief, IJIRE</div>
+              <div class="eic-hl"><i class="bi bi-people-fill"></i> Former HOD, TVE Department</div>
+            </div>
+
+            <a class="eic-btn" href="IJIRE-vol-1.html">Explore IJIRE Vol 1 <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Editor-in-Chief Section -->
+
+    <style>
+      .eic-section { padding: 60px 0; background: rgba(var(--color-primary-rgb), .04); }
+      .eic-photo-wrap {
+        position: relative; display: inline-block; border-radius: 18px; overflow: hidden;
+        box-shadow: 0 22px 60px rgba(var(--color-secondary-rgb), .28);
+      }
+      .eic-photo-wrap::after {
+        content: ""; position: absolute; inset: 0;
+        border: 4px solid rgba(var(--color-primary-rgb), .0); border-radius: 18px;
+        transition: border-color .35s;
+      }
+      .eic-photo-wrap:hover::after { border-color: var(--color-primary); }
+      .eic-photo { display: block; border-radius: 18px; max-width: 360px; width: 100%; }
+      .eic-eyebrow {
+        display: inline-block; text-transform: uppercase; letter-spacing: 2px;
+        font-size: 13px; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 8px;
+      }
+      .eic-name { font-size: 32px; font-weight: 700; color: var(--color-default); margin-bottom: 6px; }
+      .eic-role { font-weight: 600; color: var(--color-primary-dark); margin-bottom: 18px; }
+      .eic-bio { color: var(--color-secondary); line-height: 1.75; font-size: 16px; }
+      .eic-highlights { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 26px; }
+      .eic-hl {
+        display: inline-flex; align-items: center; gap: 8px; background: #fff;
+        border: 1px solid rgba(var(--color-secondary-rgb), .14); border-radius: 30px;
+        padding: 8px 16px; font-size: 14px; font-weight: 600; color: var(--color-secondary-dark);
+      }
+      .eic-hl i { color: var(--color-primary); }
+      .eic-btn {
+        display: inline-flex; align-items: center; gap: 8px; background: var(--color-primary);
+        color: #fff; font-weight: 600; padding: 12px 28px; border-radius: 6px; text-decoration: none;
+        transition: background .3s, transform .3s;
+      }
+      .eic-btn:hover { background: var(--color-primary-dark); color: #fff; transform: translateX(3px); }
+      @media (max-width: 991px) { .eic-name { font-size: 27px; } .eic-highlights { justify-content: center; } .eic-section .col-lg-7 { text-align: center; } }
+    </style>
+
+
     <!-- ======= Call To Action Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-out">
@@ -323,10 +478,16 @@
         <div class="row g-5">
 
           <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-            <h3>Call for Articles&nbsp;&nbsp;</h3>
-            <p> Get up to 20%&nbsp; discount on all articles you publish with us from all around the world within the next three weeks.</p>
-            <p>Hire our team for your consultancy, supervision, article review and stand the chance of getting up to 35% discount in your next publications with us...&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-<a class="cta-btn align-self-start" href="mailto:owohtitus@gmail.com">Email Us Now</a>
+            <h3>Call for Papers &mdash; Get Published in IJIRE&nbsp;&nbsp;</h3>
+            <p>Join scholars from across Nigeria and beyond. Submit your original research to the
+              <strong>International Journal of Integrated Research in Education (IJIRE)</strong> and our
+              INTERJ &amp; JORSTED journals &mdash; peer-reviewed, indexed online and available in print.</p>
+            <p>Enjoy up to <strong>20% off publication fees</strong> when you submit within the next three
+              weeks, and up to <strong>35% off</strong> when you also use our consultancy, supervision and
+              review team. Your work is reviewed and approved by our editorial board led by
+              <strong>Prof. T.M. Owoh</strong>.</p>
+            <a class="cta-btn align-self-start" href="mailto:owohtitus@gmail.com?subject=Manuscript%20Submission%20%E2%80%94%20Research%20Academia%20Journals&amp;body=Dear%20Editorial%20Desk%2C%0A%0AI%20would%20like%20to%20submit%20my%20manuscript%20for%20consideration%20in%20one%20of%20your%20journals%20(IJIRE%20%2F%20INTERJ%20%2F%20JORSTED).%0A%0AProposed%20Title%3A%20%0AAuthor(s)%3A%20%0AAffiliation%3A%20%0AField%2FSubject%20Area%3A%20%0AAbstract%20(150-250%20words)%3A%20%0A%0APlease%20let%20me%20know%20the%20next%20steps.%20Thank%20you.">
+              <i class="bi bi-send-fill"></i>&nbsp; Submit Your Manuscript</a>
           </div>
 
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -411,9 +572,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/prof-owoh-square.jpg" class="testimonial-img" alt="Prof. T.M. Owoh — Dean, Faculty of Education, ESUT and Editor-in-Chief of IJIRE" loading="lazy">
                 <h3>Prof. T.M. Owoh</h3>
-                <h4>Editor &amp; in Chief</h4>
+                <h4>Dean, Faculty of Education, ESUT &bull; Editor-in-Chief</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -569,44 +730,47 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-			<a href="/JOURNALS.html"> <h2>Visit our Journal Publications</h2></a>
-          <p>Recent articles from our Journal Publications</p>
+          <h2>Visit our Journal Publications</h2>
+          <p>Three peer-reviewed journals from ESUT &mdash; one Faculty-wide and two from the Department of Technical and Vocational Education (TVE).</p>
         </div>
 
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="post-box">
+              <span class="jrnl-badge faculty"><i class="bi bi-mortarboard-fill"></i> Faculty of Education Journal</span>
               <div class="meta">
                 <span class="post-date">October 2025</span>
                 <span class="post-author"> / Vol. 1, No. 1</span>
               </div>
               <h3 class="post-title">International Journal of Integrated Research in Education (IJIRE)</h3>
-              <p>The inaugural issue from the Faculty of Education, Enugu State University of Science and Technology (ESUT) — 46 peer-reviewed articles on Artificial Intelligence in Nigerian education, experiential learning and more.</p>
+              <p>The inaugural, Faculty-wide issue from the Faculty of Education, Enugu State University of Science and Technology (ESUT) — 46 peer-reviewed articles on Artificial Intelligence in Nigerian education, experiential learning and more.</p>
               <a href="IJIRE-vol-1.html" class="readmore stretched-link"><span>Read &amp; view the full journal</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
+              <span class="jrnl-badge dept"><i class="bi bi-diagram-3-fill"></i> TVE Department Journal</span>
               <div class="meta">
                 <span class="post-date">December 2016</span>
 <!--                <span class="post-author"> / Julia Parker</span>-->
               </div>
               <h3 class="post-title">International Technology Research Journal (INTERJ)</h3>
-              <p>INTERJ has the best articles from Agric Education, practical work performance, detailed research analysis and ...</p>
+              <p>A Department of Technical and Vocational Education (TVE) journal — the best articles on agricultural education, practical work performance and detailed research analysis.</p>
               <a href="INTERJ-vol-1.html" class="readmore stretched-link"><span>View full articles</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
+              <span class="jrnl-badge dept"><i class="bi bi-diagram-3-fill"></i> TVE Department Journal</span>
               <div class="meta">
                 <span class="post-date">December 2017</span>
                 <span class="post-author"> / Vol. 7, No. 2</span>
               </div>
               <h3 class="post-title">Journal of Research in Science and Technology (JORSTED)</h3>
-              <p>Over 10 units of detailed articles in industrial technology, science researches in universities.</p>
+              <p>A Department of Technical and Vocational Education (TVE) journal — over 10 detailed articles in industrial technology and science research from universities.</p>
               <a href="JORSTED-vol-1.html" class="readmore stretched-link"><span>View full articles</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -615,6 +779,17 @@
       </div>
 
     </section><!-- End Recent Blog Posts Section -->
+
+    <style>
+      #recent-blog-posts .post-box { position: relative; }
+      .jrnl-badge {
+        display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700;
+        letter-spacing: .3px; padding: 5px 12px; border-radius: 30px; margin-bottom: 14px;
+      }
+      .jrnl-badge.faculty { background: rgba(var(--color-primary-rgb), .12); color: var(--color-primary-dark); }
+      .jrnl-badge.dept { background: rgba(var(--color-secondary-rgb), .10); color: var(--color-secondary-dark); }
+      .jrnl-badge i { font-size: 13px; }
+    </style>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -757,7 +932,7 @@
             &copy; Copyright <strong><span>RESEARCH ACADEMIA</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            Designed by <a href="https://rejoiceconnect.com.ng/">Rejoice Connect</a>
+            Built by <a href="https://www.mytechteam.ng/" target="_blank" rel="noopener">My Tech Team Ltd</a>
           </div>
         </div>
 
